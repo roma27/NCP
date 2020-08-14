@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>q1:</h1>
+    <script>
+    function to_words() {
+
+        try {
+            inp = prompt('Enter some phrase')
+            if (inp.length == 0) {
+                throw "Enter something";
+            }
+            words = inp.split(" ")
+            var i = 0;
+            for (i; i < words.length; i++) {
+                document.write('Slot:' + i + ' Element:' + words[i] + '<br/>');
+            }
+            document.write(words)
+        } catch (error) {
+            document.write('<h1>Error:</h1>' + error)
+        }
+
+    }
+
+    to_words();
+
+    </script>
+    
+</body>
+</html>
